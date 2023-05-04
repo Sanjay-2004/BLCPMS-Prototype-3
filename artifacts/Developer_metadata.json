@@ -1,0 +1,320 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "bugs_arr",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "bugTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bugDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bugPriority",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "features_arr",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "featureTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "featureDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "featurePriority",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "previousReq",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "bugTitle",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bugDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bugPriority",
+								"type": "string"
+							}
+						],
+						"internalType": "struct bugReport[]",
+						"name": "",
+						"type": "tuple[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "featureTitle",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "featureDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "featurePriority",
+								"type": "string"
+							}
+						],
+						"internalType": "struct featureReport[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "send_list",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "bugTitle",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bugDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bugPriority",
+								"type": "string"
+							}
+						],
+						"internalType": "struct bugReport[]",
+						"name": "",
+						"type": "tuple[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "featureTitle",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "featureDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "featurePriority",
+								"type": "string"
+							}
+						],
+						"internalType": "struct featureReport[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "submittedbyadmin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "time",
+						"type": "string"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "new_b",
+						"type": "string[][]"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "new_f",
+						"type": "string[][]"
+					}
+				],
+				"name": "toAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string[][]",
+						"name": "new_b",
+						"type": "string[][]"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "new_f",
+						"type": "string[][]"
+					}
+				],
+				"name": "unChecked",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "unselectedBugs",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "bugTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bugDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bugPriority",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "unselectedFeatures",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "featureTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "featureDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "featurePriority",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"currentRequest1.sol": "Developer"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"currentRequest1.sol": {
+			"keccak256": "0x7ceb7a28fbf80d862fa1cfd0e737a3a9d3ec2df3c5d00dc72520d1e8dd645ac9",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://b58e2b8a0f8cb8a8381cc53cf17c159142324a84b8183db0897b981432ccac13",
+				"dweb:/ipfs/QmS6P8E7UDbcDgENP84xBdKtJw56sb2yfwDdK23pJ6qCXh"
+			]
+		}
+	},
+	"version": 1
+}
